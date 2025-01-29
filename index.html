@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: purple;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('furniture-image.jpg'); /* Replace with an actual image URL */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+            gap: 0;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .featured-products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 8px purple(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .product-card p {
+            font-size: 18px;
+            color: purple;
+        }
+        footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Furniture World</h1>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="shop">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 style="color: black;">Transform Your Home</h1>
+        <p style="color: black;">Stylish, Comfortable, and Affordable Furniture</p>
+        <img src="1.png" alt="hero">
+    </section>
+
+    <section class="featured-products">
+        <div class="product-card">
+            <img src="2.png" alt="Sofa">
+            <h3>Luxury Sofa</h3>
+            <p>$499</p>
+        </div>
+        <div class="product-card">
+            <img src="1.png" alt="Dining Table">
+            <h3>Modern Dining Table</h3>
+            <p>$799</p>
+        </div>
+        <div class="product-card">
+            <img src="2.png" alt="Chair">
+            <h3>Comfortable Chair</h3>
+            <p>$199</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Furniture World | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
